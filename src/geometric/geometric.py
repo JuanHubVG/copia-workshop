@@ -1,51 +1,19 @@
 class Geometria:
-    """
-    Class with geometric exercises.
-    Include basic and funny operations in 2D and 3D.
-    """
     
     def area_rectangulo(self, base, altura):
         return base*altura
     
-    #def perimetro_rectangulo(self, base, altura):
-     # return (base *2)+ (altura*2) 
+    def perimetro_rectangulo(self, base, altura):
+        return (base *2)+ (altura*2) 
     
     def area_circulo(self, radio):
-        """
-        Calcula el área de un círculo.
-        
-        Args:
-            radio (float): Radio del círculo
-            
-        Returns:
-            float: Área del círculo
-        """
-        pass
+        return ((radio*radio)*3.141592)
     
     def perimetro_circulo(self, radio):
-        """
-        Calcula el perímetro (circunferencia) de un círculo.
-        
-        Args:
-            radio (float): Radio del círculo
-            
-        Returns:
-            float: Perímetro del círculo
-        """
-        pass
+        return (2*3.141592(radio))
     
     def area_triangulo(self, base, altura):
-        """
-        Calcula el área de un triángulo.
-        
-        Args:
-            base (float): Longitud de la base del triángulo
-            altura (float): Altura del triángulo
-            
-        Returns:
-            float: Área del triángulo
-        """
-        pass
+        return (base * altura)/2
     
     def perimetro_triangulo(self, lado1, lado2, lado3):
         """
