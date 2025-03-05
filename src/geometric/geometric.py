@@ -85,7 +85,7 @@ class Geometria:
     
     def area_poligono_regular(self, num_lados, lado, apotema):
         """
-        Calcula el área de un polígono regular.
+        Calcula eal área de un polígono regular.
         
         Args:
             num_lados (int): Número de lados del polígono
