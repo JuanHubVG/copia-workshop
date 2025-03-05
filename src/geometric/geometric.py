@@ -26,186 +26,47 @@ class Geometria:
     def area_trapecio(self, base_mayor, base_menor, altura):
         return ((base_mayor + base_menor) /2) *altura
     def area_rombo(self, diagonal_mayor, diagonal_menor):
-        """
-        Calcula el área de un rombo usando sus diagonales.
-        
-        Args:
-            diagonal_mayor (float): Longitud de la diagonal mayor
-            diagonal_menor (float): Longitud de la diagonal menor
-            
-        Returns:
-            float: Área del rombo
-        """
-        pass
+        return (diagonal_mayor * diagonal_menor)/2
     
     def area_pentagono_regular(self, lado, apotema):
-        """
-        Calcula el área de un pentágono regular.
-        
-        Args:
-            lado (float): Longitud del lado del pentágono
-            apotema (float): Longitud de la apotema (distancia del centro al punto medio de un lado)
-            
-        Returns:
-            float: Área del pentágono regular
-        """
-        pass
+        return ((lado * 5) * apotema) /2
     
     def perimetro_pentagono_regular(self, lado):
-        """
-        Calcula el perímetro de un pentágono regular.
-        
-        Args:
-            lado (float): Longitud del lado del pentágono
-            
-        Returns:
-            float: Perímetro del pentágono regular
-        """
-        pass
+        return (lado *5)
     
     def area_hexagono_regular(self, lado, apotema):
-        """
-        Calcula el área de un hexágono regular.
-        
-        Args:
-            lado (float): Longitud del lado del hexágono
-            apotema (float): Longitud de la apotema (distancia del centro al punto medio de un lado)
-            
-        Returns:
-            float: Área del hexágono regular
-        """
-        pass
+        return((lado * 6 ) *apotema)/2
     
     def perimetro_hexagono_regular(self, lado):
-        """
-        Calcula el perímetro de un hexágono regular.
-        
-        Args:
-            lado (float): Longitud del lado del hexágono
-            
-        Returns:
-            float: Perímetro del hexágono regular
-        """
-        pass
+        return (lado*6)
     
     def volumen_cubo(self, lado):
-        """
-        Calcula el volumen de un cubo.
-        
-        Args:
-            lado (float): Longitud del lado del cubo
-            
-        Returns:
-            float: Volumen del cubo
-        """
-        pass
+        return (lado*lado*lado)
     
     def area_superficie_cubo(self, lado):
-        """
-        Calcula el área de la superficie de un cubo.
-        
-        Args:
-            lado (float): Longitud del lado del cubo
-            
-        Returns:
-            float: Área de la superficie del cubo
-        """
-        pass
+        return ((lado**2)*6)
+    
     
     def volumen_esfera(self, radio):
-        """
-        Calcula el volumen de una esfera.
-        
-        Args:
-            radio (float): Radio de la esfera
-            
-        Returns:
-            float: Volumen de la esfera
-        """
-        pass
+        return((4/3)*3.1415*(radio**3))
     
     def area_superficie_esfera(self, radio):
-        """
-        Calcula el área de la superficie de una esfera.
-        
-        Args:
-            radio (float): Radio de la esfera
-            
-        Returns:
-            float: Área de la superficie de la esfera
-        """
-        pass
+        return(4*3.1415)*(radio**2)
     
     def volumen_cilindro(self, radio, altura):
-        """
-        Calcula el volumen de un cilindro.
-        
-        Args:
-            radio (float): Radio de la base del cilindro
-            altura (float): Altura del cilindro
-            
-        Returns:
-            float: Volumen del cilindro
-        """
-        pass
+        return (3.1415*(radio**2)*(altura))
     
     def area_superficie_cilindro(self, radio, altura):
-        """
-        Calcula el área de la superficie de un cilindro.
-        
-        Args:
-            radio (float): Radio de la base del cilindro
-            altura (float): Altura del cilindro
-            
-        Returns:
-            float: Área de la superficie del cilindro
-        """
-        pass
+        return (2*3.1415*(radio**2)) + (((2*3.1415)*radio)*altura)
     
     def distancia_entre_puntos(self, x1, y1, x2, y2):
-        """
-        Calcula la distancia euclidiana entre dos puntos en un plano 2D.
-        
-        Args:
-            x1 (float): Coordenada x del primer punto
-            y1 (float): Coordenada y del primer punto
-            x2 (float): Coordenada x del segundo punto
-            y2 (float): Coordenada y del segundo punto
-            
-        Returns:
-            float: Distancia entre los dos puntos
-        """
-        pass
+        return (((x2-x1)**2)+(y2-y1)**2)**0.5
     
     def punto_medio(self, x1, y1, x2, y2):
-        """
-        Calcula el punto medio entre dos puntos en un plano 2D.
-        
-        Args:
-            x1 (float): Coordenada x del primer punto
-            y1 (float): Coordenada y del primer punto
-            x2 (float): Coordenada x del segundo punto
-            y2 (float): Coordenada y del segundo punto
-            
-        Returns:
-            tuple: Coordenadas (x, y) del punto medio
-        """
-        pass
+        return ((x1 + x2)/2),((y1+y2)/2)
     
     def pendiente_recta(self, x1, y1, x2, y2):
-        """
-        Calcula la pendiente de una recta que pasa por dos puntos.
-        
-        Args:
-            x1 (float): Coordenada x del primer punto
-            y1 (float): Coordenada y del primer punto
-            x2 (float): Coordenada x del segundo punto
-            y2 (float): Coordenada y del segundo punto
-            
-        Returns:
-            float: Pendiente de la recta
-        """
-        pass
+        return ((y2-y1)/(x2-x1))
     
     def ecuacion_recta(self, x1, y1, x2, y2):
         """
