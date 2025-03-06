@@ -43,44 +43,29 @@ class Data:
         suma_actual = sum(lista)
         return suma_esperada - suma_actual
     def es_subconjunto(self, conjunto1, conjunto2):
-        """
-        Verifica si conjunto1 es subconjunto de conjunto2 sin usar set.
-        
-        Args:
-            conjunto1 (list): Posible subconjunto
-            conjunto2 (list): Conjunto principal
-            
-        Returns:
-            bool: True si conjunto1 es subconjunto de conjunto2, False en caso contrario
-        """
-        pass
-    
+        for elemento in conjunto1:
+            if elemento not in conjunto2:
+                return False
+        return True
+
     def implementar_pila(self):
-        """
-        Implementa una estructura de datos tipo pila (stack) usando listas.
-        
-        Returns:
-            dict: Diccionario con métodos push, pop, peek y is_empty
-        """
-        pass
-    
+        pila = []
+        return {
+            'empujar': lambda x: pila.append(x),
+            'pop': lambda: pila.pop() if pila else None,
+            'peek': lambda: pila[-1] if pila else None,
+            'igual': lambda: len(pila) == 0
+        }
+
     def implementar_cola(self):
-        """
-        Implementa una estructura de datos tipo cola (queue) usando listas.
-        
-        Returns:
-            dict: Diccionario con métodos enqueue, dequeue, peek y is_empty
-        """
-        pass
-    
+        cola = []
+        return {
+            'encolar': lambda x: cola.append(x),
+            'dequeue': lambda: cola.pop(0) if cola else None,
+            'peek': lambda: cola[0] if cola else None,
+            'is_empty': lambda: len(cola) == 0
+        }
+
     def matriz_transpuesta(self, matriz):
-        """
-        Calcula la transpuesta de una matriz.
-        
-        Args:
-            matriz (list): Lista de listas que representa una matriz
-            
-        Returns:
-            list: Matriz transpuesta
-        """
-        pass
+        filas, columnas = len(matriz), len(matriz[0])
+        return [[matriz[j][i] for j in range(filas)] for i in range(columnas)]
